@@ -5,8 +5,8 @@
 {% for book in books %}
     <h4>{{ book.name }} - {{ book.author }}</h4>
     <img src="{{ MEDIA_URL }}{{ book.image }}"></img>
-
 {% endfor %}
+
 <br/>
 <a href="{% url 'addbook'  %}">Add Book</a>
 {% endblock content %}
