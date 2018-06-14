@@ -2,4 +2,11 @@
 
 {% block content %}
 <h1>Hello World</h1>
+{% for book in books %}
+    <h4>{{ book.name }} - {{ book.author }}</h4>
+    <img src="{{ MEDIA_URL }}{{ book.image }}"></img>
+
+{% endfor %}
+
+
 {% endblock content %}
