@@ -8,5 +8,7 @@
 {% endfor %}
 
 <br/>
+{% if user.is_authenticated %}
 <a href="{% url 'addbook'  %}">Add Book</a>
+{% endif %}
 {% endblock content %}
