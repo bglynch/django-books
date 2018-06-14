@@ -5,3 +5,6 @@ from .models import Book
 def get_index(request):
     books = Book.objects.all()
     return render(request, 'index.html', {'books': books})
+
+def add_book(request):
+    return render(request, 'books/addbook.html', {})
